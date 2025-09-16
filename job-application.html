@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <!--=====FAB ICON=======-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+
+
+
+  <!--=====CSS=======-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/slick-slider.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/mobile-menu.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+
+
+  <!--=====JQUERY=======-->
+  <script src="assets/js/jquery-3-7-1.min.js"></script>
+</head>
+
+<body class="body tg-heading-subheading animation-style3">
+
+
+  <!--=====progress END=======-->
+
+  <div class="paginacontainer">
+
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+  </div>
+
+  <!--=====progress END=======-->
+
+  <!-- Preloader -->
+  <section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader ctn-preloader1">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+        </div>
+        <div class="loader-section-left loader-section section-left"></div>
+        <div class="loader-section-right loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+  <!--=====HEADER START=======-->
+
+  <!--=====HEADER START=======-->
+  <div id="top-nav-bar"></div>
+  <!--=====HEADER END=======-->
+
+  <!--=====HERO AREA END=======-->
+
+  <!--=====CONTACT AREA START=======-->
+
+  <div class="contact-page">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-8 sp m-auto">
+          <h2 class="text-center">Job Appication Form</h2>
+          <div class="space30"></div>
+          <div class="contact-form-details">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="single-input">
+                    <input type="text" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="single-input">
+                    <input type="text" placeholder="Last Name">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="single-input">
+                    <input type="email" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="single-input">
+                    <input type="number" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div>
+                    <select class="single-input" id="country" name="country" required>
+                      <option value="" disabled selected>Choose from Current Job Openings</option>
+                      <option value="ae">Senior/Lead Database Administrators (Full-Time / Part-Time)</option>
+                      <option value="sa">Senior/Lead Azure Cloud Engineers (Full-Time / Part-Time)</option>
+                      <option value="om">Cybersecurity Engineers (Full-Time / Part-Time)</option>
+                      <option value="qa">Senior/Lead IFS Technicians (Full-Time / Part-Time)</option>
+                      <option value="kw">Senior/Lead IFS Technical Consultants (Applications 10 & Cloud)</option>
+                      <option value="kw">Senior/Lead IFS Functional Consultants (Applications 10 & Cloud)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="single-input">
+                    <textarea cols="30" rows="5" placeholder="Message to Hiring Manager"></textarea>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="card" role="region" aria-label="PDF Upload">
+                    <h5 cla>Upload a PDF</h5>
+                    <p class="subtle">Drag & drop a PDF here, or click to browse. Max size 10 MB.</p>
+
+                    <label id="dropzone" for="pdfInput" class="dropzone" tabindex="0" aria-describedby="dz-help">
+                      <div class="icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"
+                            stroke="currentColor" opacity="0.6" />
+                          <path d="M14 2v6h6" stroke="currentColor" opacity="0.9" />
+                          <rect x="6.5" y="13.5" width="11" height="6" rx="1.5" stroke="currentColor" />
+                          <text x="8.5" y="18.7" font-size="4" font-family="ui-sans-serif, system-ui"
+                            fill="currentColor">PDF</text>
+                        </svg>
+                      </div>
+                      <div>
+                        <strong>Drop your CV</strong><br>
+                        <span id="dz-help">Only .pdf files are accepted.</span>
+                      </div>
+                      <input id="pdfInput" type="file" accept="application/pdf" aria-label="Choose PDF" />
+                    </label>
+
+                    <div class="col-lg-12">
+                      <button id="browseBtn" class="theme-btn6 btn-padding-15" type="button" aria-controls="pdfInput">Choose File</button>
+                      <button id="clearBtn" class="theme-btn6 btn-padding-15 ghost" type="button" disabled>Clear</button>
+                      <button id="uploadBtn" class="theme-btn6 btn-padding-15" type="button" disabled>Upload</button>
+                    </div>
+                    <div class="space30"></div>
+
+                    <div id="fileInfo" class="file-info" aria-live="polite"></div>
+                    <p id="errorMsg" class="error" role="alert"></p>
+                    <p id="successMsg" class="success"></p>
+                    <!-- <p class="hint">Note: This demo validates on the client only. You still need a server endpoint to handle the actual file upload.</p> -->
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <button class="theme-btn5">Submit <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="cta">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="heading1-w">
+            <h2>At Altovian IT Solutions, We're Committed To Businesses</h2>
+            <div class="space16"></div>
+            <p>Take the first step towards achieving your business goals by contacting us today. Schedule a consultation
+              with one of our IT specialists to discuss your objectives and explore how our innovative solutions can
+              propel.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="buttons">
+            <a class="theme-btn6" href="services.html">Request a Consultaion <span><i
+                  class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!--=====CTA AREA END=======-->
+
+  <!--===== FOOTER AREA START =======-->
+  <div id="footer"></div>
+  <!--===== FOOTER AREA END =======-->
+
+  <script>
+    $("#top-nav-bar").load("top-nav-bar.html");
+    $("#footer").load("footer.html");
+  </script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/fontawesome.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
+  <script src="assets/js/jquery.magnific-popup.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/Splitetext.js"></script>
+  <script src="assets/js/text-animation.js"></script>
+  <script src="assets/js/SmoothScroll.js"></script>
+  <script src="assets/js/jquery.lineProgressbar.js"></script>
+  <script src="assets/js/ripple-btn.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
