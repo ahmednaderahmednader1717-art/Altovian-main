@@ -152,8 +152,8 @@
                 <img src="assets/img/icons/contact-page-icon1.png" alt="">
               </div>
               <div class="heading">
-                <h5>Contact Us</h5>
-                <a href="tel:(+94) 112896770" class="text">(+94) 112896770</a>
+                <h5>Give us a Call</h5>
+                <span class="text">(+94) 112896770</span>
               </div>
             </div>
 
@@ -162,8 +162,8 @@
                 <img src="assets/img/icons/contact-page-icon2.png" alt="">
               </div>
               <div class="heading">
-                <h5>Send Us a Mail</h5>
-                <a href="mailto:info@altovian.net " class="text">info@altovian.net </a>
+                <h5>Send us an Email</h5>
+                <span class="text">info@altovian.net</span>
               </div>
             </div>
 
@@ -172,8 +172,8 @@
                 <img src="assets/img/icons/contact-page-icon3.png" alt="">
               </div>
               <div class="heading">
-                <h5>Office Location</h5>
-                <a href="tel:(124)555-6565" class="text">37/1, 2nd Lane,Rajamaha Vihara Road, Pita Kotte, Sri Lanka </a>
+                <h5>Visit us</h5>
+                <span class="text">37/1, 2nd Lane, Rajamaha Vihara Road, Pita Kotte, Sri Lanka</span>
               </div>
             </div>
 
@@ -183,39 +183,39 @@
 
         <div class="col-lg-6">
           <div class="contact-form-details">
-            <form action="#">
+            <form action="contact.php" method="post">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="single-input">
-                    <input type="text" placeholder="First Name">
+                    <input type="text" name="first_name" placeholder="First Name" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="single-input">
-                    <input type="text" placeholder="Last Name">
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="single-input">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="last_name" placeholder="Last Name" required>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="single-input">
-                    <input type="number" placeholder="Phone">
+                    <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="single-input">
+                    <input type="tel" name="phone" placeholder="Phone">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="single-input">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject" required>
                   </div>
                 </div>
 
                 <div class="col-lg-12">
                   <div class="single-input">
-                    <textarea cols="30" rows="5" placeholder="Message"></textarea>
+                    <textarea cols="30" rows="5" name="message" placeholder="Message" required></textarea>
                   </div>
                 </div>
 

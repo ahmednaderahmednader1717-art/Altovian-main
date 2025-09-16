@@ -6,13 +6,31 @@
     const mobile_nav_open = $('.mobile-nav-icon');
     const mobile_sidebar = $('.mobile-sidebar');
     const mobile_nav_close = $('.menu-close');
+    let body_overlay = $('.body-overlay');
+    if(body_overlay.length === 0){
+      body_overlay = $('<div class="body-overlay"></div>').appendTo('body');
+    }
+
+    const openMobileMenu = function(){
+      mobile_sidebar.addClass('mobile-menu-active');
+      $('body').addClass('overflow-hidden');
+      body_overlay.addClass('active');
+    };
+    const closeMobileMenu = function(){
+      mobile_sidebar.removeClass('mobile-menu-active');
+      $('body').removeClass('overflow-hidden');
+      body_overlay.removeClass('active');
+    };
 
     mobile_nav_open.on('click', function(){
-      mobile_sidebar.addClass('mobile-menu-active');
+      openMobileMenu();
     });
 
     mobile_nav_close.on('click', function(){
-      mobile_sidebar.removeClass('mobile-menu-active');
+      closeMobileMenu();
+    });
+    body_overlay.on('click', function(){
+      closeMobileMenu();
     });
 
 
